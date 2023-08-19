@@ -10,6 +10,8 @@ spec:
   - name: nginx
     image: nginx
     env:
-    - name: naveen
-      age: 35
+    - name: course
+      value: kubernetes
+    - name: trainer
+      value: naveen
 

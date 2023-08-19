@@ -23,4 +23,16 @@ spec:
     - image: nginx
       name: nginx
 ---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+  labels:
+    server: debug
+spec:
+  containers:
+    - image: almalinux
+      name: almalinux
+      command: ["sleep", "1000000"]
+---
 

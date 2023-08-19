@@ -32,3 +32,6 @@ spec:
           valueFrom:
             configMapRef:
               name: course-config
+
+---
+

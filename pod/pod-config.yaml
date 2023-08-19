@@ -28,8 +28,8 @@ spec:
     - image: nginx
       name: nginx
       envFrom:
-        configMapRef:
-          name: course-config
+        - configMapRef:
+            name: course-config
 
 ---
 

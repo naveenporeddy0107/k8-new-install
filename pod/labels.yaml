@@ -4,7 +4,7 @@ metadata:
   name: label-pod
   labels:
     course: docker
-    duration: 25
+    duration: 25hr
 spec:
   containers:
   - name: nginx

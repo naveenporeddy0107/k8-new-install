@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: course-config
 data:
-  course: kubernetes
+  course: kubernetes+docker
   duration: 25hrss

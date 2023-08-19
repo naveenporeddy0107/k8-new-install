@@ -9,3 +9,7 @@ spec:
   containers:
   - name: nginx
     image: nginx
+    env:
+    - name: naveen
+      age: 35
+

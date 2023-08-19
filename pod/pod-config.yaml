@@ -3,18 +3,17 @@ kind: Pod
 metadata:
   name: config-pod
 spec:
-containers:
-- image: nginx
-  name: nginx
-  env:
-  - name: course
-    valueFrom:
-      configMapKeyRef:
-        name: course-config
-        key: course
-  - name: duration
-    valueFrom:
-      configMapKeyRef:
-        name: course-config
-        key: duration
-
+  containers:
+    - image: nginx
+      name: nginx
+      env:
+        - name: course
+          valueFrom:
+            configMapKeyRef:
+              name: course-config
+              key: course
+        - name: duration
+          valueFrom:
+            configMapKeyRef:
+              name: course-config
+              key: duration
